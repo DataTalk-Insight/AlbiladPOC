@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d5f7eaf6ab4f46338e22d2e781166db0 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_d5f7eaf6ab4f46338e22d2e781166db0" ></div>
+        
+</body>
+<script>    
+    
+            var map_d5f7eaf6ab4f46338e22d2e781166db0 = L.map(
+                "map_d5f7eaf6ab4f46338e22d2e781166db0",
+                {
+                    center: [23.8859, 45.0792],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 3,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_d5f7eaf6ab4f46338e22d2e781166db0);
+
+            
+
+        
+    
+            var tile_layer_94f6796f5a6a48a3965e7f95ee7447d5 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_d5f7eaf6ab4f46338e22d2e781166db0);
+        
+    
+        function geo_json_c2b9d632f9e54840b51aa1cd364af710_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "white", "fillColor": "green"};
+            }
+        }
+
+        function geo_json_c2b9d632f9e54840b51aa1cd364af710_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_c2b9d632f9e54840b51aa1cd364af710 = L.geoJson(null, {
+                onEachFeature: geo_json_c2b9d632f9e54840b51aa1cd364af710_onEachFeature,
+            
+                style: geo_json_c2b9d632f9e54840b51aa1cd364af710_styler,
+        });
+
+        function geo_json_c2b9d632f9e54840b51aa1cd364af710_add (data) {
+            geo_json_c2b9d632f9e54840b51aa1cd364af710
+                .addData(data)
+                .addTo(map_d5f7eaf6ab4f46338e22d2e781166db0);
+        }
+            geo_json_c2b9d632f9e54840b51aa1cd364af710_add({"features": [{"geometry": {"coordinates": [[[42.779332, 16.347891], [42.649573, 16.774635], [42.347989, 17.075806], [42.270888, 17.474722], [41.754382, 17.833046], [41.221391, 18.6716], [40.939341, 19.486485], [40.247652, 20.174635], [39.801685, 20.338862], [39.139399, 21.291905], [39.023696, 21.986875], [39.066329, 22.579656], [38.492772, 23.688451], [38.02386, 24.078686], [37.483635, 24.285495], [37.154818, 24.858483], [37.209491, 25.084542], [36.931627, 25.602959], [36.639604, 25.826228], [36.249137, 26.570136], [35.640182, 27.37652], [35.130187, 28.063352], [34.632336, 28.058546], [34.787779, 28.607427], [34.83222, 28.957483], [34.956037, 29.356555], [36.068941, 29.197495], [36.501214, 29.505254], [36.740528, 29.865283], [37.503582, 30.003776], [37.66812, 30.338665], [37.998849, 30.5085], [37.002166, 31.508413], [39.004886, 32.010217], [39.195468, 32.161009], [40.399994, 31.889992], [41.889981, 31.190009], [44.709499, 29.178891], [46.568713, 29.099025], [47.459822, 29.002519], [47.708851, 28.526063], [48.416094, 28.552004], [48.807595, 27.689628], [49.299554, 27.461218], [49.470914, 27.109999], [50.152422, 26.689663], [50.212935, 26.277027], [50.113303, 25.943972], [50.239859, 25.60805], [50.527387, 25.327808], [50.660557, 24.999896], [50.810108, 24.754743], [51.112415, 24.556331], [51.389608, 24.627386], [51.579519, 24.245497], [51.617708, 24.014219], [52.000733, 23.001154], [55.006803, 22.496948], [55.208341, 22.70833], [55.666659, 22.000001], [54.999982, 19.999994], [52.00001, 19.000003], [49.116672, 18.616668], [48.183344, 18.166669], [47.466695, 17.116682], [47.000005, 16.949999], [46.749994, 17.283338], [46.366659, 17.233315], [45.399999, 17.333335], [45.216651, 17.433329], [44.062613, 17.410359], [43.791519, 17.319977], [43.380794, 17.579987], [43.115798, 17.08844], [43.218375, 16.66689], [42.779332, 16.347891]]], "type": "Polygon"}, "id": "SAU", "properties": {"name": "Saudi Arabia"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_c2b9d632f9e54840b51aa1cd364af710.bindTooltip(
+                `<div>
+                     Saudi Arabia
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>

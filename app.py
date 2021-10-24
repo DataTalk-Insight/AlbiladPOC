@@ -40,6 +40,7 @@ def get_map(lat, lon, radius):
     #geolocator = GoogleV3(api_key=key)
     #locations = geolocator.reverse(f"{lat}, {lon}")
     #label =locations[0]
+    radius = radius * 1000
     map_ = folium.Map(location=[lat, lon], zoom_start=20)
     folium.Marker([lat, lon]).add_to(map_)
     folium.Circle([lat, lon],

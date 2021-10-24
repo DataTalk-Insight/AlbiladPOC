@@ -1,5 +1,5 @@
-# RecSys
-Recommender System project
+# AlbiladPOC
+POC for Albilad Bank
 
 # How to run
 

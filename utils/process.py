@@ -61,8 +61,8 @@ def spoton(lat, lng, rad, dictionary, data):
     dictionary = dictionary.iloc[: , 1:]
     test = normalized_subset_data.merge(dictionary, on="Place_id", how="left")
     test = test.drop(['Lat_y', 'Lng_y', 'Rating','Rating_n'], 1)
-    albilad = test[test['Name'].str.contains("Albilad")]
-    other_banks = test[~test['Name'].str.contains("Albilad")]
+    albilad = test[~test['Albilad'].isnull()]
+    other_banks = test[test['Albilad'].isnull()]
     #############################################
     #Final Output
     if len(albilad)<=0:
